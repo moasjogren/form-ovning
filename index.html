@@ -4,12 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulär</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div class="simon"></div>
     <div class="sixten"></div>
     <div class="kristoffer"></div>
-    <div class="moa"></div>
+    <div class="moa">
+      <form
+        class="moa-form"
+        action="https://httpbin.org/anything"
+        method="POST"
+      >
+        <h2 class="moa-h2">Sök jobb</h2>
+        <fieldset class="moa-firstname">
+          <label for="moa-firstname">Förnamn:</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </fieldset>
+
+        <fieldset class="moa-lastname">
+          <label for="moa-lastname">Efternamn:</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </fieldset>
+
+        <fieldset class="moa-email">
+          <label for="moa-email">Mejladress:</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+
+        <fieldset class="moa-password">
+          <label for="moa-password">Lösenord:</label>
+          <input type="password" id="password" name="password" required />
+        </fieldset>
+
+        <fieldset class="moa-message">
+          <label for="moa-message">Personligt brev:</label>
+          <textarea name="message" id="message"></textarea>
+        </fieldset>
+
+        <fieldset class="moa-radio">
+          <p>Ålder:</p>
+          <label for="moa-age-18-29">18-29</label>
+          <input type="radio" value="18-29" id="moa-age-18-29" name="age" />
+
+          <label for="moa-age-30-49">30-49</label>
+          <input type="radio" value="30-49" id="moa-age-30-49" name="age" />
+
+          <label for="moa-age-50-65">50-65</label>
+          <input type="radio" value="50-65" id="moa-age-50-65" name="age" />
+        </fieldset>
+
+        <fieldset class="moa-checkbox">
+          <p>Utbildning:</p>
+
+          <label for="moa-grundskola">Grundskola</label>
+          <input type="checkbox" name="moa-grundskola" id="moa-grundskola" />
+
+          <label for="moa-gymnasium">Gymnasium</label>
+          <input type="checkbox" name="moa-gymnasium" id="moa-gymnasium" />
+
+          <label for="moa-hogskola">Högskola</label>
+          <input type="checkbox" name="moa-hogskola" id="moa-hogskola" />
+        </fieldset>
+
+        <fieldset class="moa-send">
+          <button type="submit">Skicka</button>
+        </fieldset>
+      </form>
+    </div>
     <div class="elin"></div>
   </body>
 </html>
