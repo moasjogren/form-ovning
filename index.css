@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.simon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: linear-gradient(
+    45deg,
+    rgb(224, 224, 162) 50%,
+    rgb(205, 133, 133) 50%
+  );
+  font-family: "Afacad Flux", sans-serif;
+}
+.simon-header {
+  margin-bottom: 20px;
+  color: #403434;
+}
+.simon-form {
+  height: auto;
+  width: 500px;
+  border-radius: 10px;
+  backdrop-filter: blur(40px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+input {
+  border: none;
+  outline: none;
+}
+.simon-names {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+.simon-name-container,
+.simon-password {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.simon-name-container input,
+.simon-password input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+}
+.simon-name-container input:hover,
+.simon-password input:hover {
+  border: 1px solid grey;
+}
+
+.simon-name-container input:focus {
+  padding: 15px;
+}
+label {
+  font-weight: bold;
+}
+.simon-password {
+  flex-direction: column;
+}
+.simon-password input {
+  min-width: 70%;
+  margin-top: 10px;
+}
+.simon-password input:focus {
+  width: 75%;
+}
+.simon-textarea {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  gap: 10px;
+  align-self: center;
+}
+#simon-text {
+  resize: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 70%;
+  height: 8rem;
+  border: none;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.simon-choices {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.simon-radio-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simon-radio-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.simon-education {
+  display: flex;
+  flex-direction: column;
+}
+.simon-check {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.simon-btn div {
+  transition: all 0.5s ease-in-out;
+}
+.simon-btn {
+  display: flex;
+  justify-content: center;
+}
+.simon-btn button {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  background-color: rgb(90, 180, 90);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.simon-btn button:hover {
+  background-color: rgb(62, 135, 62);
+}
+.simon-btn button:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.simon-btn button:hover div {
+  margin-left: 10px;
+  transform: rotate(360deg);
+}
+
+.moa {
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: lightblue;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+  width: 650px;
+}
+
+.moa-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.moa-form input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.moa-form input[type="radio"] {
+  width: auto;
+}
+
+.moa-form input[type="checkbox"] {
+  width: auto;
+}
+
+.moa form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.moa-h2 {
+  padding: 10px;
+  font-size: 40px;
+}
+
+.moa p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.moa-form fieldset {
+  padding: 10px;
+  border: none;
+}
+
+.moa-firstname {
+  grid-column: 1 /2;
+}
+
+.moa-lastname {
+  grid-column: 2 / 3;
+}
+
+.moa-message {
+  grid-column: 1 / 3;
+  resize: none;
+}
+.moa-radio {
+  grid-column: 1 / 2;
+}
+
+.moa-checkbox {
+  grid-column: 2 / 3;
+}
+
+.moa-send button {
+  background-color: white;
+  padding: 0.5em 1.5em;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.moa-send button:hover {
+  background-color: rgb(187, 185, 185);
+}
+
+.moa-form input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 1.5px solid blue;
+}
+
+.moa-form textarea:focus {
+  outline: none;
+  border: 1.5px solid blue;
+}
+
+.elin {
+  background-color: pink;
+  display: grid;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 10px;
+}
+
+.elin-firstname {
+  grid-column: 1/2;
+}
+
+.elin-lastname {
+  grid-column: 2/3;
+}
+
+.elin-email {
+  grid-column: 1/2;
+}
+
+.elin.password {
+  grid-column: 2/3;
+}
+
+.elin-choose {
+  grid-column: 1/2;
+}
+
+.elin-radio {
+  grid-column: 2/3;
+}
+
+.elin-message {
+  grid-column: 1/2;
+}
+
+.elin-submit {
+  grid-column: 1/2;
+  grid-row: 6/6;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: palevioletred;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid rgb(233, 110, 244);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: rgb(65, 28, 68);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: rgb(145, 16, 59);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.kristoffer {
+  display: grid;
+  grid-template-rows: repeat(5fr);
+  padding: 2rem;
+  width: 80%;
+  background-color: #90ee90;
+  margin: auto;
+  border-radius: 1rem;
+}
+.kristoffer-headline {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2rem;
+}
+.kristoffer-fieldset {
+  padding: 1rem;
+  border: none;
+}
+.kristoffer-label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.kristoffer-text-area {
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+.kristoffer-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.kristoffer input {
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.kristoffer-checkbox,
+.kristoffer-radio {
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem 0 2rem;
+}
+.kristoffer input:focus,
+.kristoffer-btn:focus,
+.kristoffer-text-area:focus {
+  background-color: lightblue;
+}

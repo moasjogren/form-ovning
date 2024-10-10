@@ -4,73 +4,356 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Formulär</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="form-wrapper">
-      <form action="https://httpbin.org/anything" method="POST">
-        <section class="form-grid">
-          <article class="form-grid-item form-label">
-            <h3>Employment type</h3>
-            <p>Pick one or multiple options</p>
-          </article>
-          <article class="form-grid-item employment-input">
-            <div class="employment-input-wrapper">
-              <div class="custom-checkbox">
-                <input type="checkbox" id="full-time" name="employment" />
-                <label for="full-time">Full-time</label>
+    <div class="simon">
+      <form
+        action="https://httpbin.org/anything"
+        method="POST"
+        class="simon-form"
+      >
+        <div class="simon-names">
+          <div class="simon-name-container">
+            <label for="simon-firstname">Firstname:</label>
+            <input
+              name="firsname"
+              type="text"
+              id="simon-firstname"
+              placeholder="Firstname..."
+            />
+          </div>
+          <div class="simon-name-container">
+            <label for="simon-lastname">Lastname:</label>
+            <input
+              name="lastname"
+              type="text"
+              id="simon-lastname"
+              placeholder="Lastname..."
+            />
+          </div>
+        </div>
+        <div class="simon-password">
+          <label for="simon-password">Wanted password...</label>
+          <input
+            id="simon-password"
+            type="password"
+            name="password"
+            minlength="8"
+            placeholder="Min 8 characters..."
+          />
+        </div>
+        <div class="simon-textarea">
+          <label for="simon-text">Tell us:</label>
+          <textarea
+            name="simon-content"
+            id="simon-text"
+            maxlength="500"
+            placeholder="Your darkest secret here..."
+          ></textarea>
+        </div>
+        <div class="simon-choices">
+          <div class="simon-radio-buttons">
+            <p>Occupation:</p>
+            <div class="simon-radio-choices">
+              <div class="simon-radio-btn">
+                <label for="simon-student">Student</label>
+
+                <input
+                  id="simon-student"
+                  type="radio"
+                  name="employment"
+                  value="student"
+                />
               </div>
-              <div class="custom-checkbox">
-                <input type="checkbox" id="part-time" name="employment" />
-                <label for="part-time">Part-time</label>
+              <div class="simon-radio-btn">
+                <label for="simon-working">Working</label>
+                <input
+                  id="simon-working"
+                  type="radio"
+                  name="employment"
+                  value="working"
+                />
               </div>
-              <div class="custom-checkbox">
-                <input type="checkbox" id="on-demand" name="employment" />
-                <label for="on-demand">On demand</label>
-              </div>
-              <div class="custom-checkbox">
-                <input type="checkbox" id="negotiable" name="employment" />
-                <label for="negotiable">Negotiable</label>
+              <div class="simon-radio-btn">
+                <label for="simon-fattig">Fri and Fattig</label>
+                <input
+                  id="simon-fattig"
+                  type="radio"
+                  name="employment"
+                  value="fattig"
+                />
               </div>
             </div>
-          </article>
-          <article class="form-grid-item form-label">
-            <h3>Working schedule</h3>
-            <p>You can pick multiple work schedules.</p>
-          </article>
-          <article class="form-grid-item schedule-input">
-            <div class="schedule-input-wrapper">
-              <div class="custom-select">
-                <select id="schedule" name="schedule">
-                  <option value="morning">Monday to Friday</option>
-                  <option value="morning">Weekend availability</option>
-                  <option value="morning">Day shift</option>
-                </select>
-              </div>
+          </div>
+
+          <div class="simon-education">
+            <p>Education:</p>
+            <div class="simon-check">
+              <label for="kindergarden">Kindergarden</label>
+              <input
+                name="kindergarden"
+                value="kindergarden"
+                type="checkbox"
+                id="kindergarden"
+              />
             </div>
-          </article>
-          <article class="form-grid-item form-label">
-            <h3>Salary</h3>
-            <p>Choose how you prefer to pay for this job.</p>
-          </article>
-          <article class="form-grid-item schedule-input">
-            <div class="salary-input-wrapper">
-              <div class="custom-radio">
-                <input type="radio" id="hourly" name="salary" />
-                <label for="hourly">Hourly</label>
-              </div>
-              <div class="custom-radio">
-                <input type="radio" id="custom" name="salary" />
-                <label for="custom">Custom</label>
-              </div>
+            <div class="simon-check">
+              <label for="middle-school">Middle School</label>
+              <input
+                name="middle school"
+                value="middle school"
+                type="checkbox"
+                id="middle-school"
+              />
             </div>
-          </article>
-          <article class="form-nav">
-            <button type="button" class="back-button">Back</button>
-            <button type="submit" class="next-button">Next</button>
-          </article>
-        </section>
+            <div class="simon-check">
+              <label for="cool-kid-school">Cool Kid School</label>
+              <input
+                name="cool kid school"
+                value="cool kid school"
+                type="checkbox"
+                id="cool-kid-school"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="simon-file-upload">
+          <label for="file-upload">Upload file:</label>
+          <input type="file" id="file-upload" name="uploadedFile" />
+        </div>
+
+        <div class="simon-btn">
+          <button type="submit">
+            Send
+            <div>✉</div>
+          </button>
+        </div>
       </form>
-    </main>
+    </div>
+    <div class="sixten">
+        <main class="form-wrapper">
+            <form action="https://httpbin.org/anything" method="POST">
+              <section class="form-grid">
+                <article class="form-grid-item form-label">
+                  <h3>Employment type</h3>
+                  <p>Pick one or multiple options</p>
+                </article>
+                <article class="form-grid-item employment-input">
+                  <div class="employment-input-wrapper">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="full-time" name="employment" />
+                      <label for="full-time">Full-time</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="part-time" name="employment" />
+                      <label for="part-time">Part-time</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="on-demand" name="employment" />
+                      <label for="on-demand">On demand</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="negotiable" name="employment" />
+                      <label for="negotiable">Negotiable</label>
+                    </div>
+                  </div>
+                </article>
+                <article class="form-grid-item form-label">
+                  <h3>Working schedule</h3>
+                  <p>You can pick multiple work schedules.</p>
+                </article>
+                <article class="form-grid-item schedule-input">
+                  <div class="schedule-input-wrapper">
+                    <div class="custom-select">
+                      <select id="schedule" name="schedule">
+                        <option value="morning">Monday to Friday</option>
+                        <option value="morning">Weekend availability</option>
+                        <option value="morning">Day shift</option>
+                      </select>
+                    </div>
+                  </div>
+                </article>
+                <article class="form-grid-item form-label">
+                  <h3>Salary</h3>
+                  <p>Choose how you prefer to pay for this job.</p>
+                </article>
+                <article class="form-grid-item schedule-input">
+                  <div class="salary-input-wrapper">
+                    <div class="custom-radio">
+                      <input type="radio" id="hourly" name="salary" />
+                      <label for="hourly">Hourly</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" id="custom" name="salary" />
+                      <label for="custom">Custom</label>
+                    </div>
+                  </div>
+                </article>
+                <article class="form-nav">
+                  <button type="button" class="back-button">Back</button>
+                  <button type="submit" class="next-button">Next</button>
+                </article>
+              </section>
+            </form>
+          </main>
+    </div>
+    <div class="moa">
+      <form
+        class="moa-form"
+        action="https://httpbin.org/anything"
+        method="POST"
+      >
+        <h2 class="moa-h2">Sök jobb</h2>
+        <fieldset class="moa-firstname">
+          <label for="moa-firstname">Förnamn:</label>
+          <input type="text" id="firstname" name="firstname" required />
+        </fieldset>
+
+        <fieldset class="moa-lastname">
+          <label for="moa-lastname">Efternamn:</label>
+          <input type="text" id="lastname" name="lastname" required />
+        </fieldset>
+
+        <fieldset class="moa-email">
+          <label for="moa-email">Mejladress:</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+
+        <fieldset class="moa-password">
+          <label for="moa-password">Lösenord:</label>
+          <input type="password" id="password" name="password" required />
+        </fieldset>
+
+        <fieldset class="moa-message">
+          <label for="moa-message">Personligt brev:</label>
+          <textarea name="message" id="message"></textarea>
+        </fieldset>
+
+        <fieldset class="moa-radio">
+          <p>Ålder:</p>
+          <label for="moa-age-18-29">18-29</label>
+          <input type="radio" value="18-29" id="moa-age-18-29" name="age" />
+
+          <label for="moa-age-30-49">30-49</label>
+          <input type="radio" value="30-49" id="moa-age-30-49" name="age" />
+
+          <label for="moa-age-50-65">50-65</label>
+          <input type="radio" value="50-65" id="moa-age-50-65" name="age" />
+        </fieldset>
+
+        <fieldset class="moa-checkbox">
+          <p>Utbildning:</p>
+
+          <label for="moa-grundskola">Grundskola</label>
+          <input type="checkbox" name="moa-grundskola" id="moa-grundskola" />
+
+          <label for="moa-gymnasium">Gymnasium</label>
+          <input type="checkbox" name="moa-gymnasium" id="moa-gymnasium" />
+
+          <label for="moa-hogskola">Högskola</label>
+          <input type="checkbox" name="moa-hogskola" id="moa-hogskola" />
+        </fieldset>
+
+        <fieldset class="moa-send">
+          <button type="submit">Skicka</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="kristoffer">
+        <form action="https://httpbin.org/anything" method="POST">
+            <h2 class="kristoffer-headline">Sök jobb</h2>
+            <fieldset class="kristoffer-fieldset">
+                <label class="kristoffer-label" for="kristoffer-name">Namn:</label><input class="kristoffer-namn" id="kristoffer-name" name="kristoffer-name" type="text" placeholder="fullständingt namn" required>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <label class="kristoffer-label" for="kristoffer-password">Lösenord:</label><input class="kristoffer-password" id="kristoffer-password" name="kristoffer-password" type="password" placeholder="Lösenord" minlength="8" required>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <label class="kristoffer-label" for="kristoftter-age">Ålder:</label><input class="kristoffer-ålder" id="kristoffer-age" name="kristoffer-age" type="number" placeholder="ålder" required>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <label class="kristoffer-label" for="kristoffer-mail">Email:</label><input class="kristoffer-email" id="kristoffer-mail" name="kristoffer-mail"type="text" placeholder="namn@gmail.com" required>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <Label class="kristoffer-label" for="kristoffer-checkbox">Utbildning:</Label>
+                <input class="kristoffer-checkbox" id="kristoffer-yh" name="kristoffer-yh" type="checkbox" value="Yrkeshögskola"><label class="kristoffer-label" for="kristoffer-yh">Yrkeshögskola</label>
+                <input class="kristoffer-checkbox" id="kristoffer-u" name="kristoffer-u" type="checkbox" value="Universitet"><label class="kristoffer-label" for="kristoffer-u">Universitet</label>
+                <input class="kristoffer-checkbox" id="kristoffer-gymnasiet" name="kristoffer-gymnasiet" type="checkbox" value="gymnasiet"><label class="kristoffer-label" for="kristoffer-gymnasiet">Gymnasiet</label>
+                <input class="kristoffer-checkbox" id="kristoffer-grundskola" name="kristoffer-grundskola" type="checkbox" value="grundskola" required><label class="kristoffer-label" for="kristoffer-grundskola">grundskola</label>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <label class="kristoffer-label" id="kristoffer-text-area" name="kristoffer-text-area"for="kristoffer-text-area">Personligt brev:</label><textarea class="kristoffer-text-area" type="text" required></textarea>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <Label class="kristoffer-label" for="kristoffer-radio">Favorit djur:</Label>
+                <input class="kristoffer-radio" id="kristoffer-hund" name="kristoffer-hund" type="radio" value="Hund" name="radio"><label class="kristoffer-label" for="kristoffer-hund">Hund</label>
+                <input class="kristoffer-radio" id="kristoffer-katt" name="kristoffer-katt" type="radio" value="Katt" name="radio"><label class="kristoffer-label" for="kristoffer-katt">Katt</label>
+                <input class="kristoffer-radio" id="kristoffer-hamster" name="kristoffer-hamster" type="radio" value="Hamster" name="radio"><label class="kristoffer-label" for="kristoffer-hamster">Hamster</label>
+                <input class="kristoffer-radio" id="kristoffer-annat" name="kristoffer-annat" type="radio" value="Annat djur" name="radio"><label class="kristoffer-label" for="kristoffer-annat">Annan</label>
+            </fieldset>
+            <fieldset class="kristoffer-fieldset">
+                <button class="kristoffer-btn" type="submit">Skicka</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="elin">
+
+        <h2>Ansök tjänst: Junior utvecklare</h2>
+    <form action="https://httpbin.org/anything" method="POST">
+
+    <fieldset class="elin-firstname"> 
+        <label for="elin-firstname">Förnamn:</label>
+        <input type="text" id="elin-firstname" name="firstname" required>
+      </fieldset> 
+      <fieldset class="elin-lastname">
+        <label for="elin-lastname">Efternamn:</label>
+        <input type="text" id="elin-lastname" name="lastname" required>
+      </fieldset>
+      <fieldset class="elin-email">
+        <label for="elin-email">E-post:</label>
+        <input type="text" id="elin-email" name="email" reguierd>
+      </fieldset>
+
+      <fieldset class="elin-password">
+        <label for="elin-password">Lösenord:</label>
+        <input type="password" id="elin-password" name="password" minlength="8" required>
+      </fieldset>
+
+      <fieldset class="elin-choose">
+        <label for="elin-choose"> Utbildning:</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Gymnassium">
+            <label for="elin-choose"> Gymnassium</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Yrkeshögskola">
+            <label for="elin-choose"> Yrkeshögskola</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Högskola">
+            <label for="elin-choose"> Högskola</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Kunvux">
+            <label for="elin-choose"> Kunvux</label><br>
+        </fieldset>
+
+        <fieldset class="elin-radio">
+            <label for="elin-radio">Kunskapsområde:</label> <br>
+            <input type="radio" id="elin-radio" name="language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="elin-radio" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="elin-radio" name="language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+
+      <fieldset class="elin-message">
+        <label for="elin-message">Meddelande:</label>
+        <textarea name="message" id="elin-message" placeholder="Skriv något här"></textarea>
+      </fieldset>
+
+      <fieldset class="elin-submit">
+        <button type="submit">Skicka</button>
+
+        </fieldset>
+    </div>
   </body>
 </html>
