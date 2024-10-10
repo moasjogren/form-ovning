@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Formulär</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="simon">
@@ -132,14 +134,73 @@
         </div>
       </form>
     </div>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Formulär</title>
-        <link rel="stylesheet" href="./index.css">
-    </head>
-    <body>
-    <div class="sixten"></div>
+    <div class="sixten">
+        <main class="form-wrapper">
+            <form action="https://httpbin.org/anything" method="POST">
+              <section class="form-grid">
+                <article class="form-grid-item form-label">
+                  <h3>Employment type</h3>
+                  <p>Pick one or multiple options</p>
+                </article>
+                <article class="form-grid-item employment-input">
+                  <div class="employment-input-wrapper">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="full-time" name="employment" />
+                      <label for="full-time">Full-time</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="part-time" name="employment" />
+                      <label for="part-time">Part-time</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="on-demand" name="employment" />
+                      <label for="on-demand">On demand</label>
+                    </div>
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="negotiable" name="employment" />
+                      <label for="negotiable">Negotiable</label>
+                    </div>
+                  </div>
+                </article>
+                <article class="form-grid-item form-label">
+                  <h3>Working schedule</h3>
+                  <p>You can pick multiple work schedules.</p>
+                </article>
+                <article class="form-grid-item schedule-input">
+                  <div class="schedule-input-wrapper">
+                    <div class="custom-select">
+                      <select id="schedule" name="schedule">
+                        <option value="morning">Monday to Friday</option>
+                        <option value="morning">Weekend availability</option>
+                        <option value="morning">Day shift</option>
+                      </select>
+                    </div>
+                  </div>
+                </article>
+                <article class="form-grid-item form-label">
+                  <h3>Salary</h3>
+                  <p>Choose how you prefer to pay for this job.</p>
+                </article>
+                <article class="form-grid-item schedule-input">
+                  <div class="salary-input-wrapper">
+                    <div class="custom-radio">
+                      <input type="radio" id="hourly" name="salary" />
+                      <label for="hourly">Hourly</label>
+                    </div>
+                    <div class="custom-radio">
+                      <input type="radio" id="custom" name="salary" />
+                      <label for="custom">Custom</label>
+                    </div>
+                  </div>
+                </article>
+                <article class="form-nav">
+                  <button type="button" class="back-button">Back</button>
+                  <button type="submit" class="next-button">Next</button>
+                </article>
+              </section>
+            </form>
+          </main>
+    </div>
     <div class="moa">
       <form
         class="moa-form"
