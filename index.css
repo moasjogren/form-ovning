@@ -3,3 +3,104 @@
   margin: 0;
   padding: 0;
 }
+
+.elin{
+  background-color: pink;
+  display: grid;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 10px;
+
+}
+
+.elin-firstname{
+  grid-column: 1/2;
+}
+
+.elin-lastname{
+  grid-column: 2/3;
+}
+
+.elin-email{
+  grid-column: 1/2;
+}
+
+.elin.password{
+  grid-column: 2/3;
+}
+
+.elin-choose{
+  grid-column: 1/2;
+}
+
+.elin-radio{
+  grid-column: 2/3;
+}
+
+.elin-message{
+  grid-column: 1/2;
+}
+
+.elin-submit{
+  grid-column: 1/2;
+  grid-row: 6/6;
+}
+
+
+fieldset{
+border: none;
+} 
+
+input[type ="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input[type ="text"]:hover,
+input[type="email"]:hover,
+
+textarea:hover
+{
+    border-color: palevioletred;
+}
+
+
+input[type ="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus
+{
+    outline: none;
+    border: 2px solid rgb(233, 110, 244);
+}
+
+button {
+  padding: 12px 20px;
+  background-color: rgb(65, 28, 68);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: rgb(145, 16, 59);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}

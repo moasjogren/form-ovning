@@ -4,12 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulär</title>
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
     <div class="simon"></div>
     <div class="sixten"></div>
     <div class="kristoffer"></div>
     <div class="moa"></div>
-    <div class="elin"></div>
+    <div class="elin">
+
+        <h2>Ansök tjänst: Junior utvecklare</h2>
+    <form action="https://httpbin.org/anything" method="POST">
+
+    <fieldset class="elin-firstname"> 
+        <label for="elin-firstname">Förnamn:</label>
+        <input type="text" id="elin-firstname" name="firstname" required>
+      </fieldset> 
+      <fieldset class="elin-lastname">
+        <label for="elin-lastname">Efternamn:</label>
+        <input type="text" id="elin-lastname" name="lastname" required>
+      </fieldset>
+      <fieldset class="elin-email">
+        <label for="elin-email">E-post:</label>
+        <input type="text" id="elin-email" name="email" reguierd>
+      </fieldset>
+
+      <fieldset class="elin-password">
+        <label for="elin-password">Lösenord:</label>
+        <input type="password" id="elin-password" name="password" minlength="8" required>
+      </fieldset>
+
+      <fieldset class="elin-choose">
+        <label for="elin-choose"> Utbildning:</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Gymnassium">
+            <label for="elin-choose"> Gymnassium</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Yrkeshögskola">
+            <label for="elin-choose"> Yrkeshögskola</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Högskola">
+            <label for="elin-choose"> Högskola</label><br>
+            <input type="checkbox" id="elin-choose" name="elin-choose" value="Kunvux">
+            <label for="elin-choose"> Kunvux</label><br>
+        </fieldset>
+
+        <fieldset class="elin-radio">
+            <label for="elin-radio">Kunskapsområde:</label> <br>
+            <input type="radio" id="elin-radio" name="language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="elin-radio" name="language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="elin-radio" name="language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </fieldset>
+
+      <fieldset class="elin-message">
+        <label for="elin-message">Meddelande:</label>
+        <textarea name="message" id="elin-message" placeholder="Skriv något här"></textarea>
+      </fieldset>
+
+      <fieldset class="elin-submit">
+        <button type="submit">Skicka</button>
+
+        </fieldset>
+    </div>
   </body>
 </html>
