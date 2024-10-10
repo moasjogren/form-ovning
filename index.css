@@ -272,7 +272,7 @@ input[type="password"]:focus {
   width: 80%;
 }
 
-form {
+.elin-form {
   display: grid;
   grid-template-columns: 300px 300px;
   column-gap: 30px;
@@ -317,31 +317,31 @@ form {
   border: none;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
+.elin > input[type="text"],
+.elin > input[type="email"],
+.elin > input[type="password"],
+.elin > textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid black;
 }
 
-input[type="text"]:hover,
-input[type="email"]:hover,
-textarea:hover {
+.elin > input[type="text"]:hover,
+.elin > input[type="email"]:hover,
+.elin > textarea:hover {
   border-color: palevioletred;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus {
+.elin > input[type="text"]:focus,
+.elin > input[type="email"]:focus,
+.elin > input[type="password"]:focus,
+.elin > textarea:focus {
   outline: none;
   border: 2px solid rgb(233, 110, 244);
 }
 
-button {
+.elin > button {
   padding: 12px 20px;
   background-color: rgb(65, 28, 68);
   color: white;
@@ -352,12 +352,12 @@ button {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
+.elin > button:hover {
   background-color: rgb(145, 16, 59);
   transform: scale(1.05);
 }
 
-button:active {
+.elin > button:active {
   transform: scale(0.98);
 }
 
