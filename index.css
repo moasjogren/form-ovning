@@ -34,7 +34,7 @@
   text-align: center;
   gap: 20px;
 }
-input {
+.simon input {
   border: none;
   outline: none;
 }
@@ -73,7 +73,7 @@ input {
 .simon-name-container input:focus {
   padding: 15px;
 }
-label {
+.simon label {
   font-weight: bold;
 }
 .simon-password {
@@ -317,31 +317,31 @@ input[type="password"]:focus {
   border: none;
 }
 
-.elin > input[type="text"],
-.elin > input[type="email"],
-.elin > input[type="password"],
-.elin > textarea {
+.elin input[type="text"],
+.elin input[type="email"],
+.elin input[type="password"],
+.elin textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid black;
 }
 
-.elin > input[type="text"]:hover,
-.elin > input[type="email"]:hover,
-.elin > textarea:hover {
+.elin input[type="text"]:hover,
+.elin input[type="email"]:hover,
+.elin textarea:hover {
   border-color: palevioletred;
 }
 
-.elin > input[type="text"]:focus,
-.elin > input[type="email"]:focus,
-.elin > input[type="password"]:focus,
-.elin > textarea:focus {
+.elin input[type="text"]:focus,
+.elin input[type="email"]:focus,
+.elin input[type="password"]:focus,
+.elin textarea:focus {
   outline: none;
   border: 2px solid rgb(233, 110, 244);
 }
 
-.elin > button {
+.elin button {
   padding: 12px 20px;
   background-color: rgb(65, 28, 68);
   color: white;
@@ -352,12 +352,12 @@ input[type="password"]:focus {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.elin > button:hover {
+.elin button:hover {
   background-color: rgb(145, 16, 59);
   transform: scale(1.05);
 }
 
-.elin > button:active {
+.elin button:active {
   transform: scale(0.98);
 }
 
