@@ -1,0 +1,212 @@
+:root {
+  --background-color: #f8fafc;
+  --form-background-color: #fff;
+  --border-color: #cbd5e1;
+  --border-color-hover: #94a3b8;
+
+  --text-primary: #0f172a;
+  --text-secondary: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-wrapper {
+  width: 1024px;
+  height: 40rem;
+
+  margin: 2rem auto;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--form-background-color);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.form-grid {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr) auto;
+}
+
+.form-grid-item {
+  grid-column: span 1;
+  grid-row: span 1;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+}
+
+.form-label h3 {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: var(--text-primary);
+}
+
+.form-label p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.employment-input-wrapper {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.custom-checkbox {
+  width: 15rem;
+  height: 3rem;
+
+  position: relative;
+  display: flex;
+  padding: 0 0.5rem 0 0.75rem;
+  align-items: center;
+
+  background-color: var(--form-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: border 200ms ease-out;
+}
+
+.custom-checkbox > input {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  display: block;
+  margin-right: 0.5rem;
+}
+
+.custom-checkbox > label {
+  width: 100%;
+
+  display: block;
+
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.schedule-input-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.custom-select {
+  width: 100%;
+  height: 3rem;
+
+  position: relative;
+  display: flex;
+  padding: 0 0.5rem 0 0.75rem;
+  align-items: center;
+
+  background-color: var(--form-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  transition: border 200ms ease-out;
+  cursor: pointer;
+}
+
+.custom-select > select {
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+}
+
+.salary-input-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.custom-radio {
+  width: 50%;
+  height: 100%;
+
+  position: relative;
+
+  background-color: var(--form-background-color);
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+  transition: border 200ms ease-out;
+}
+
+.custom-radio > label {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.custom-radio > input {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.form-nav {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.form-nav button {
+  padding: 0.75rem 2rem;
+
+  background-color: var(--form-background-color);
+  border-radius: 0.25rem;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border 200ms ease-out;
+}
+
+.form-nav button:hover,
+.custom-radio:hover,
+.custom-checkbox:hover,
+.custom-select:hover {
+  border: 1px solid var(--border-color-hover);
+}
