@@ -7,7 +7,130 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div class="simon"></div>
+    <div class="simon">
+      <form
+        action="https://httpbin.org/anything"
+        method="POST"
+        class="simon-form"
+      >
+        <div class="simon-names">
+          <div class="simon-name-container">
+            <label for="simon-firstname">Firstname:</label>
+            <input
+              name="firsname"
+              type="text"
+              id="simon-firstname"
+              placeholder="Firstname..."
+            />
+          </div>
+          <div class="simon-name-container">
+            <label for="simon-lastname">Lastname:</label>
+            <input
+              name="lastname"
+              type="text"
+              id="simon-lastname"
+              placeholder="Lastname..."
+            />
+          </div>
+        </div>
+        <div class="simon-password">
+          <label for="simon-password">Wanted password...</label>
+          <input
+            id="simon-password"
+            type="password"
+            name="password"
+            minlength="8"
+            placeholder="Min 8 characters..."
+          />
+        </div>
+        <div class="simon-textarea">
+          <label for="simon-text">Tell us:</label>
+          <textarea
+            name="simon-content"
+            id="simon-text"
+            maxlength="500"
+            placeholder="Your darkest secret here..."
+          ></textarea>
+        </div>
+        <div class="simon-choices">
+          <div class="simon-radio-buttons">
+            <p>Occupation:</p>
+            <div class="simon-radio-choices">
+              <div class="simon-radio-btn">
+                <label for="simon-student">Student</label>
+
+                <input
+                  id="simon-student"
+                  type="radio"
+                  name="employment"
+                  value="student"
+                />
+              </div>
+              <div class="simon-radio-btn">
+                <label for="simon-working">Working</label>
+                <input
+                  id="simon-working"
+                  type="radio"
+                  name="employment"
+                  value="working"
+                />
+              </div>
+              <div class="simon-radio-btn">
+                <label for="simon-fattig">Fri and Fattig</label>
+                <input
+                  id="simon-fattig"
+                  type="radio"
+                  name="employment"
+                  value="fattig"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="simon-education">
+            <p>Education:</p>
+            <div class="simon-check">
+              <label for="kindergarden">Kindergarden</label>
+              <input
+                name="kindergarden"
+                value="kindergarden"
+                type="checkbox"
+                id="kindergarden"
+              />
+            </div>
+            <div class="simon-check">
+              <label for="middle-school">Middle School</label>
+              <input
+                name="middle school"
+                value="middle school"
+                type="checkbox"
+                id="middle-school"
+              />
+            </div>
+            <div class="simon-check">
+              <label for="cool-kid-school">Cool Kid School</label>
+              <input
+                name="cool kid school"
+                value="cool kid school"
+                type="checkbox"
+                id="cool-kid-school"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="simon-file-upload">
+          <label for="file-upload">Upload file:</label>
+          <input type="file" id="file-upload" name="uploadedFile" />
+        </div>
+
+        <div class="simon-btn">
+          <button type="submit">
+            Send
+            <div>✉</div>
+          </button>
+        </div>
+      </form>
+    </div>
     <div class="sixten"></div>
     <div class="kristoffer"></div>
     <div class="moa">
